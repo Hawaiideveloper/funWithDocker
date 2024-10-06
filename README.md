@@ -8,6 +8,10 @@ _Run google in an unsafe state using the following command_
 
 `open -na "Google Chrome" --args --disable-web-security --user-data-dir="$HOME/chrome-dev"`
 
+### Or ...
+
+`python3 -m http.server`
+
 # Docker Instuctions
  
  ## To run this Application you will need Docker
