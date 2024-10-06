@@ -11,7 +11,7 @@ _Run google in an unsafe state using the following command_
 # Docker Instuctions
  
  ## To run this Application you will need Docker
- _The folowing commands below will get you started, be sure to be in the PWD of the directory when running these commands
+ _The folowing commands below will get you started, be sure to be in the PWD of the directory when running these commands_
  
  #### First remove any docker image to ensure you are targeting the right release
  `docker rm brightflow-app-container`
