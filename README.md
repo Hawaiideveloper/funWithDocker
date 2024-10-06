@@ -1,10 +1,10 @@
-
 # Due to CORS:
  _The application can be seen as intended because of the modules being handled seperately, you will need to re-run docker after each edit_
  
  
 ### Or....
-_Run google in an unsafe state using the following command _
+
+_Run google in an unsafe state using the following command_
 
 `open -na "Google Chrome" --args --disable-web-security --user-data-dir="$HOME/chrome-dev"`
 
