@@ -1,0 +1,156 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #000000; /* Black background */
+  color: white;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #1e1e1e;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.infinity-symbol {
+  font-size: 2em;
+  color: gold;
+  margin-right: 10px;
+  animation: shimmer 3s infinite;
+}
+
+.brand-name {
+  color: gold;
+  font-size: 1.5em;
+  margin-right: 10px;
+  animation: glow 2s infinite alternate;
+}
+
+.shimmer-text {
+  font-size: 2em;
+  color: gold;
+  animation: shimmer 3s infinite;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+@keyframes shimmer {
+  0% {
+    text-shadow: none;
+  }
+  50% {
+    text-shadow: 0 0 20px gold, 0 0 40px gold, 0 0 60px gold;
+  }
+  100% {
+    text-shadow: none;
+  }
+}
+
+@keyframes glow {
+  0%, 100% {
+    text-shadow: 0 0 5px gold, 0 0 10px gold, 0 0 20px gold;
+  }
+  50% {
+    text-shadow: 0 0 10px gold, 0 0 20px gold, 0 0 30px gold;
+  }
+}
+
+.hamburger-menu {
+  position: relative;
+  cursor: pointer;
+}
+
+.hamburger-menu span {
+  font-size: 2em;
+  color: white;
+}
+
+.hamburger-menu .dropdown-menu {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #333;
+  list-style: none;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.hamburger-menu:hover .dropdown-menu {
+  display: block;
+}
+
+.hamburger-menu .dropdown-menu li {
+  padding: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+.hamburger-menu .dropdown-menu li:hover {
+  background-color: #555;
+}
+
+.balance-card, .transaction-history {
+  margin-bottom: 20px;
+}
+
+.balance-card h2 {
+  font-size: 1.5em;
+}
+
+.balance-card p {
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+.transaction-history table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.transaction-history th, .transaction-history td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+/* Profit chart container with world map watermark */
+.profit-chart {
+  position: relative;
+  background-image: url('world-map.png'); /* Ensure you have a flat world map image */
+  background-size: cover;
+  opacity: 0.1; /* Semi-transparent watermark */
+}
+
+canvas {
+  position: relative;
+  z-index: 2; /* Keep the chart above the background */
+  background-color: rgba(0, 0, 0, 0.7); /* Add background color for better visibility */
+  border: 2px solid gold; /* Border for the chart */
+}
+
+.invest-button {
+  background-color: gold;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border: none;
+  width: 100%;
+}

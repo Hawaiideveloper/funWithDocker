@@ -1,0 +1,44 @@
+/* Typography and Animations */
+.shimmer-text {
+    font-size: 2em;
+    color: gold;
+    animation: shimmer 3s infinite;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .infinity-symbol {
+    font-size: 2em;
+    color: gold;
+    margin-right: 10px;
+    animation: shimmer 3s infinite;
+  }
+  
+  .brand-name {
+    color: gold;
+    font-size: 1.5em;
+    margin-right: 10px;
+    animation: glow 2s infinite alternate;
+  }
+  
+  @keyframes shimmer {
+    0% {
+      text-shadow: none;
+    }
+    50% {
+      text-shadow: 0 0 20px gold, 0 0 40px gold, 0 0 60px gold;
+    }
+    100% {
+      text-shadow: none;
+    }
+  }
+  
+  @keyframes glow {
+    0%, 100% {
+      text-shadow: 0 0 5px gold, 0 0 10px gold, 0 0 20px gold;
+    }
+    50% {
+      text-shadow: 0 0 10px gold, 0 0 20px gold, 0 0 30px gold;
+    }
+  }
+  

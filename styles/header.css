@@ -1,0 +1,47 @@
+/* Header and Navigation Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .hamburger-menu {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .hamburger-menu span {
+    font-size: 2em;
+    color: white;
+  }
+  
+  .hamburger-menu .dropdown-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #333;
+    list-style: none;
+    padding: 10px;
+    margin-top: 10px;
+  }
+  
+  .hamburger-menu:hover .dropdown-menu {
+    display: block;
+  }
+  
+  .hamburger-menu .dropdown-menu li {
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .hamburger-menu .dropdown-menu li:hover {
+    background-color: #555;
+  }
+  

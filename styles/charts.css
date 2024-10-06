@@ -1,0 +1,26 @@
+/* Style the container to take up the entire width */
+.profit-chart {
+  width: 100%; /* Full viewport width */
+  height: 35vh; /* 35% of the viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../images/world-map.png'); /* Ensure the correct path to your watermark */
+  background-size: cover; /* Cover the entire container */
+  background-position: center; /* Center the watermark */
+  background-repeat: no-repeat; /* No repeat of the watermark */
+}
+
+
+canvas {
+  width: 100% !important; /* Full width for the canvas */
+  height: 400px !important; /* Set a fixed height */
+  border: 1px solid gold; /* Gold border for the chart */
+  background-color: rgba(0, 0, 0, 0.7); /* Dark background for contrast */
+  z-index: 2; /* Ensure canvas is above the background */
+}
+
+
+
+
+
